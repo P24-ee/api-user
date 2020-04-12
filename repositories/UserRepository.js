@@ -1,6 +1,4 @@
 const { uuidAPIKey } = require("uuid-apikey");
-const PropTypes = require('prop-types');
-const DbPropType = require('p24-api-db/prop_types/Db.propType');
 
 const UserRepository = (db) => {
   const TABLE_NAME = "users";
@@ -77,11 +75,5 @@ const UserRepository = (db) => {
     getUserByGoogleId,
   };
 };
-
-if (process.env.NODE_ENV !== 'production') {
-  UserRepository.propTypes = {
-    db: PropTypes.shape(DbPropType),
-  };
-}
 
 module.exports = UserRepository;

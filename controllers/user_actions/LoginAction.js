@@ -1,6 +1,4 @@
 const { OAuth2Client } = require('google-auth-library');
-const PropTypes = require('prop-types');
-const UserRepositoryPropType = require('../../prop_types/UserRepository.propType');
 
 const LoginAction = (userRepository, body) => {
 
@@ -53,12 +51,5 @@ const LoginAction = (userRepository, body) => {
         getResponse
     }
 };
-
-if (process.env.NODE_ENV !== 'production') {
-    LoginAction.propTypes = {
-        userRepository: PropTypes.shape(UserRepositoryPropType),
-        body: PropTypes.object
-    };
-}
 
 module.exports = LoginAction;

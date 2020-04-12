@@ -1,6 +1,6 @@
 {
   "name": "p24-api-user",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -18,11 +18,8 @@
   "homepage": "https://github.com/P24-ee/api-user#readme",
   "dependencies": {
     "google-auth-library": "^6.0.0",
-    "p24-api-db": "^1.0.6",
-    "p24-api-install": "^1.0.9",
+    "p24-api-db": "^1.0.7",
+    "p24-api-install": "^1.0.10",
     "uuid-apikey": "^1.4.6"
-  },
-  "devDependencies": {
-    "prop-types": "^15.7.2"
   }
 }

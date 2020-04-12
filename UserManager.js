@@ -1,5 +1,3 @@
-const PropTypes = require('prop-types');
-const DbPropType = require('p24-api-db/prop_types/Db.propType');
 const UserRepository = require('./repositories/UserRepository');
 
 const UserManager = async (db, requestHelper) => {
@@ -25,12 +23,5 @@ const UserManager = async (db, requestHelper) => {
         getUser,
     }
 };
-
-if (process.env.NODE_ENV !== 'production') {
-    UserManager.propTypes = {
-        db: PropTypes.shape(DbPropType),
-        requestHelper: PropTypes.func.isRequired
-    };
-}
 
 module.exports = UserManager;

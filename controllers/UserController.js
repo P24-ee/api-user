@@ -1,7 +1,6 @@
 const LoginAction = require("./user_actions/LoginAction");
 const UserRepository = require('../repositories/UserRepository');
 const UserDataAction = require('./user_actions/UserDataAction');
-const DbPropType = require('p24-api-db/prop_types/Db.propType');
 
 const UserController = (db, user) => {
     const userRepository = UserRepository(db);
@@ -66,12 +65,5 @@ const UserController = (db, user) => {
         handle
     }
 };
-
-if (process.env.NODE_ENV !== 'production') {
-    LoginAction.propTypes = {
-        db: PropTypes.shape(DbPropType),
-        user: PropTypes.object
-    };
-}
 
 module.exports = UserController;
