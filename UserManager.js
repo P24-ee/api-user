@@ -1,11 +1,12 @@
 const UserRepository = require('./repositories/UserRepository');
+const UserDto = require('./dtos/UserDto');
 
 const UserManager = async (db, requestHelper) => {
     const userRepository = UserRepository(db);
     let user = null;
 
     const getUser = () => {
-        return user;
+        return UserDto(user);
     };
 
     const setUser = async () => {

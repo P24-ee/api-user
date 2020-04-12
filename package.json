@@ -20,6 +20,7 @@
     "google-auth-library": "^6.0.0",
     "p24-api-db": "^1.0.7",
     "p24-api-install": "^1.0.10",
-    "uuid-apikey": "^1.4.6"
+    "uuid-apikey": "^1.4.6",
+    "p24-api-dto": "^1.0.2"
   }
 }

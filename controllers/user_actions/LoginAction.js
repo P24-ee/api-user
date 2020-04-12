@@ -1,4 +1,5 @@
 const { OAuth2Client } = require('google-auth-library');
+const UserDto = require('../../dtos/UserDto');
 
 const LoginAction = (userRepository, body) => {
 
@@ -29,11 +30,11 @@ const LoginAction = (userRepository, body) => {
                         user.api_key = await userRepository.changeApiKey(user.hash);
                     }
 
-                    return {
-                        firstName: user.first_name || null,
-                        lastName: user.last_name || null,
-                        apiKey: user.api_key || null
-                    };
+                    if (user === null) {
+                        return {};
+                    }
+
+                    return UserDto(user);
                 }
             } catch (e) {
                 return {

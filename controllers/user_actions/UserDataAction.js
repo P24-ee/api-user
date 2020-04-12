@@ -1,14 +1,12 @@
+const UserDto = require('../../dtos/UserDto');
+
 const UserDataAction = () => {
     const getUserData = (user) => {
         if (user === null) {
             return {};
         }
 
-        return {
-            firstName: user.first_name,
-            lastName: user.last_name,
-            apiKey: user.api_key
-        }
+        return UserDto(user);
     };
 
     const getUserDataByApiKey = async (userRepository, apiKey) => {
