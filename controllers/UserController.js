@@ -44,11 +44,6 @@ const UserController = (db, user) => {
         const action = query.action || null;
         let response = null;
 
-        console.log(query);
-        console.log(body);
-        console.log(action);
-        console.log(requestHelper);
-
         switch (action) {
             case 'login':
                 response = await login(body);
