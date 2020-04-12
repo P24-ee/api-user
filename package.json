@@ -1,6 +1,6 @@
 {
   "name": "p24-api-user",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -18,9 +18,9 @@
   "homepage": "https://github.com/P24-ee/api-user#readme",
   "dependencies": {
     "google-auth-library": "^6.0.0",
-    "p24-api-db": "^1.0.7",
-    "p24-api-install": "^1.0.10",
-    "uuid-apikey": "^1.4.6",
-    "p24-api-dto": "^1.0.2"
+    "p24-api-db": "https://github.com/P24-ee/api-db/tarball/master",
+    "p24-api-install": "https://github.com/P24-ee/api-install/tarball/master",
+    "p24-api-dto": "https://github.com/P24-ee/api-dto/tarball/master",
+    "uuid-apikey": "^1.4.6"
   }
 }
