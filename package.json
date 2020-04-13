@@ -18,9 +18,9 @@
   "homepage": "https://github.com/P24-ee/api-user#readme",
   "dependencies": {
     "google-auth-library": "^6.0.0",
-    "p24-api-db": "https://github.com/P24-ee/api-db/tarball/master",
-    "p24-api-install": "https://github.com/P24-ee/api-install/tarball/master",
-    "p24-api-dto": "https://github.com/P24-ee/api-dto/tarball/master",
+    "p24-api-db": "file:../p24-api-db",
+    "p24-api-install": "file:../p24-api-install",
+    "p24-api-dto": "file:../p24-api-dto",
     "uuid-apikey": "^1.4.6"
   }
 }

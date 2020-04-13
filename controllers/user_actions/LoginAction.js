@@ -38,7 +38,8 @@ const LoginAction = (userRepository, body) => {
                 }
             } catch (e) {
                 return {
-                    error: 'Please try again, something went wrong!'
+                    error: 'Please try again, something went wrong!',
+                    message: e
                 };
             }
         }
