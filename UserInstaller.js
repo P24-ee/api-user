@@ -8,6 +8,10 @@ const UserInstaller = (installer) => {
             '2020032717301_seed_users',
             __dirname + "/seeds/2020032717301_seed_users.sql"
         );
+        installer.addMigration(
+            '2020051716151_seed_pages.sql',
+            __dirname + "/migrations/2020051716151_seed_pages.sql"
+        );
     };
 
     return {
